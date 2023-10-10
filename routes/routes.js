@@ -1,7 +1,8 @@
+/*import { express } from "express";
 import { Router } from "express";
+const {MongoClient} = require("mongodb");
 
-
-const router = Router();
+const router = express.Router();
 
 router.get("/conect", async (req, res)=> {
     //acceder a la base de datos
@@ -129,6 +130,7 @@ router.put('/actualizar/:id', async (req, res) => {
     });
 
     router.delete('/borrar/:id', async (req, res) => {
+      const id = req.params.id();
 
         try{
 
@@ -145,3 +147,4 @@ router.put('/actualizar/:id', async (req, res) => {
    });
   
   export default router;
+*/
